@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #edf1f4;
+}
+
+.calculator {
+    position: relative;
+    /* You can adjust the gap value as per your preference */
+    width: 340px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 15px 15px 20px rgba(0,0,0,0.1), -15px -15px 20px #fffb
+
+}
+
+.calculator .buttons {
+    position: relative;
+    display: grid;
+}
+.calculator .buttons #value{
+    position: relative;
+    grid-column: span 4;
+    width: 100%;
+    user-select: none;
+    color: #5166d6;
+    line-height: 100px;
+    height: 100px;
+    border: 10px;
+    text-align: end;
+    margin-bottom: 12px;
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,0.1);
+}
+.calculator .buttons #clear {
+    grid-column: span 2;
+    background-color: crimson;
+}
+.calculator .buttons #plus{
+    grid-row: span 2;
+    background-color: aquamarine;
+
+}
+.calculator .buttons span {
+    position: relative;
+    padding: 10px;
+    box-shadow:  5px 5px 10px rgba(0,0,0,0.1), -5px -5px 10px #fff;
+    min-width: 40px;
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+
+}
+.calculator .buttons span:active{
+    box-shadow:  inset 5px 5px 10px rgba(0,0,0,0.1),inset -5px -5px 10px #fff;
+    color: #f44336;
+} 
