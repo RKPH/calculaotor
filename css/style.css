@@ -46,7 +46,7 @@ body {
 }
 .calculator .buttons #plus{
     grid-row: span 2;
-    background-color: aquamarine;
+    background-color: red;
 
 }
 .calculator .buttons span {
